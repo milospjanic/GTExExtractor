@@ -1,5 +1,6 @@
 #!/bin/bash
 
+FILE=./
 
 #check if GTEx file exists, if not, download 
 
