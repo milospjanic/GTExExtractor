@@ -1,5 +1,14 @@
 #!/bin/bash
 
+
+#check if GTEx file exists, if not, download 
+
+if [ ! -f $FILE ]
+then
+wget 
+
+fi
+
 #download GTEx Analysis V6p release, de-identified, open access version of the sample annotations, available in dbGaP.	
 wget https://www.dropbox.com/s/23c3zs9igediuy1/GTEx_Data_V6_Annotations_SampleAttributesDS.txt
 
