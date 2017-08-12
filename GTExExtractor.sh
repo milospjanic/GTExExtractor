@@ -1,12 +1,12 @@
 #!/bin/bash
 
-FILE=./
+FILE=./GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct.gz
 
 #check if GTEx file exists, if not, download 
 
 if [ ! -f $FILE ]
 then
-wget 
+wget https://www.dropbox.com/s/c47ywdnnbge0y4j/GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct.gz
 
 fi
 
