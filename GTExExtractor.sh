@@ -22,7 +22,8 @@ fi
 
 
 #grep your tissue of interest, need exact tissue name from the GTEx file
-grep $1 GTEx_Data_V6_Annotations_SampleAttributesDS.txt | cut -f1 > sample_IDs
+par=$1
+grep "$par" GTEx_Data_V6_Annotations_SampleAttributesDS.txt | cut -f1 > sample_IDs
 
 input="./sample_IDs"
 
