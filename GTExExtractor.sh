@@ -22,7 +22,7 @@ fi
 
 
 #grep your tissue of interest, need exact tissue name from the GTEx file
-par=$1
+par=$1 #pass the first argument to a variable so that it can be used in grep with double quotes, in order to use spaced argument 
 grep "$par" GTEx_Data_V6_Annotations_SampleAttributesDS.txt | cut -f1 > sample_IDs
 
 input="./sample_IDs"
@@ -45,6 +45,10 @@ awk -v COLT=\$1 '
         }
 ' \$2
 " > extractor.sh
+chmod 755 extractor.sh
+
+#create header
+cat GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct | head -n3 | tail -n1 > header
 
 #exctract data for each gene in genes.txt from the GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct (all GTEX individuals) 
 while
@@ -52,7 +56,7 @@ IFS= read -r line
 do 
 grep $line GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct > $line.gene.rpkm.txt
 cat header $line.gene.rpkm.txt > $line.gene.rpkm.header.txt
-done
+done < "$GENES"
 
 #list the file names created in previous step to a file
 ls -1 *gene.rpkm.header.txt > gene.file.names.txt
@@ -62,11 +66,15 @@ input2="./gene.file.names.txt"
 while 
 IFS= read -r line 
 do 
+	echo $line
+
         while 
-        IFS= read -r line2
+        IFS= read -r samples
         
         do
-        ./extractor.sh $line $line2
-        done < "$input2"
+        ./extractor.sh $samples $line | awk 'NR%2==0'
+        done < "$input" > $line.output
         
-done < "$input" | awk 'NR%2==0' 
+done < "$input2"
+
+paste *output > results.txt
