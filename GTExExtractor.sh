@@ -66,14 +66,14 @@ input2="./gene.file.names.txt"
 while 
 IFS= read -r line 
 do 
-	echo $line
+	echo $line >$line.output
 
         while 
         IFS= read -r samples
         
         do
         ./extractor.sh $samples $line | awk 'NR%2==0'
-        done < "$input" > $line.output
+        done < "$input" >> $line.output
         
 done < "$input2"
 
