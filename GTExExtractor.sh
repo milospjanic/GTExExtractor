@@ -87,8 +87,8 @@ library (ggplot2)
 
 p<-read.table(\"results.txt\", header=T)
 pmelt<-melt(p)
-pdf(\"output_gtexex.pdf\")
-p <- ggplot(pmelt, aes(x=variable, y=value)) +geom_violin(aes(fill=variable)) + geom_dotplot(binaxis='y', stackdir='center', dotsize=.5, binwidth=.7)+labs(title=\"Expression in GTEx samples in $par\", x=\"Genes\", y=\"RPKM expression level\") + theme(axis.text.x = element_text(size=16),axis.text.y = element_text(size=16), axis.title.x = element_text(size=18),axis.title.y = element_text(size=18), plot.title=element_text(size=16))
+pdf(\"output_gtexex.pdf\", width = 7+length(p)/2)
+p <- ggplot(pmelt, aes(x=variable, y=value)) + geom_violin(aes(fill=variable)) + geom_dotplot(binaxis='y', stackdir='center', dotsize=.5, binwidth=.7)+labs(title=\"Expression in GTEx samples in $par\", x=\"Genes\", y=\"RPKM expression level\") + theme(axis.text.x = element_text(size=16),axis.text.y = element_text(size=16), axis.title.x = element_text(size=18),axis.title.y = element_text(size=18), plot.title=element_text(size=16))
 p
 dev.off()
 
