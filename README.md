@@ -28,9 +28,11 @@ GTExExtractor.sh 'Artery - Coronary'
 
 Check the output pdf file:
 
-
+![alt text](
 
 If you have more genes in the input file the script will automatically widen the graph
+
+![alt text](
 
 For example if we run the script for all the genes in the group of transcription factor the output will look like:
 
