@@ -9,11 +9,13 @@ GTEXExtractor is a combined bash/R script to extract individual level data from 
 
 Content of the genes.txt
 
+<pre>
 SMAD3
 FOXO1
 FOX03
 NFIX
 TCF21
+</pre>
 
 To run the script 
 
