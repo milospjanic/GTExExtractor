@@ -54,7 +54,7 @@ cat GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct | head -n3 | tail -n1
 while
 IFS= read -r line
 do 
-grep $line GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct > $line.gene.rpkm.txt
+grep -P "$line\t" GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct > $line.gene.rpkm.txt
 cat header $line.gene.rpkm.txt > $line.gene.rpkm.header.txt
 done < "$GENES"
 
@@ -78,3 +78,23 @@ do
 done < "$input2"
 
 paste *output > results.txt
+
+sed -i 's/.gene.rpkm.header.txt//g' results.txt
+
+echo "#!/usr/bin/Rscript
+library(reshape2)
+library (ggplot2)
+
+p<-read.table(\"results.txt\", header=T)
+pmelt<-melt(p)
+pdf(\"output_gtexex.pdf\")
+p <- ggplot(pmelt, aes(x=variable, y=value)) +geom_violin(aes(fill=variable)) + geom_dotplot(binaxis='y', stackdir='center', dotsize=.5, binwidth=.7)+labs(title=\"Expression in GTEx samples in $par\", x=\"Genes\", y=\"RPKM expression level\") + theme(axis.text.x = element_text(size=16),axis.text.y = element_text(size=16), axis.title.x = element_text(size=18),axis.title.y = element_text(size=18), plot.title=element_text(size=16))
+p
+dev.off()
+
+" > script.r
+
+#run R script
+
+chmod 775 script.r
+./script.r
