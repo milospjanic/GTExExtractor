@@ -13,9 +13,9 @@ Content of the genes.txt
 <pre>
 SMAD3
 FOXO1
-FOX03
 NFIX
 TCF21
+TCF12
 </pre>
 
 To run the script 
