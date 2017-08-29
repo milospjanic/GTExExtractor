@@ -46,9 +46,9 @@ I took as the example here the NFI group of transcription factors that c2onsisnt
 
 To check the expression level in arteries I ran the script for 'Artery - Coronary' and 'Artery - Tibial' GTEX tissues and got the following output where NFIX is the most dominant form.
 
-![alt text](
+![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.15.png)
 
-![alt text](
+![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.16.png)
 
 To check the output in a diferent tissue I ran the script:
 
