@@ -38,13 +38,18 @@ For example, if we run the script for one highly expressed gene like GAPDH and a
 
 ![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.19.png)
 
-# Example biological application
+# Biological application
 
 For example the script can show which isoform is more dominant and thus probably more functional in different tissues.
 
-I took as the example here the NFI group of transcription factors that c2onsisnt of NFIA, NFIB, NFIC, NFIX genes
+I took as the example here the NFI group of transcription factors that c2onsisnt of NFIA, NFIB, NFIC, NFIX genes.
 
-To check the expression level in coronary arterys I ran the script and got the following output
+To check the expression level in arteries I ran the script for 'Artery - Coronary' and 'Artery - Tibial' GTEX tissues and got the following output where NFIX is the most dominant form.
+
+![alt text](
+
+![alt text](
+
 To check the output in a diferent tissue I ran the script:
 
 This example shows that NFIX variant is more dominant in coronary arteries while
