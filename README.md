@@ -54,7 +54,7 @@ To check the output in a diferent tissue I ran the script for 'Skeletal Muscle' 
 
 ![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.17.png)
 
-And in 'Breast - Mummary Tissue' the NFIB variant becomes expressed at higher levels. 
+And in 'Breast - Mammary Tissue' the NFIB variant becomes expressed at higher levels. 
 
 ![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.24.png)
 
