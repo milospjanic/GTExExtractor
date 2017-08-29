@@ -34,8 +34,9 @@ If you have more genes in the input file the script will automatically widen the
 
 ![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.18.png)
 
-For example, if we run the script for all the genes in the group of transcription factor the output will look like:
+For example, if we run the script for one highly expressed gene like GAPDH and all low expressed TFs the output will look like:
 
+![alt text](
 
 # Example biological application
 
