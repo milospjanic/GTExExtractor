@@ -42,7 +42,7 @@ For example, if we run the script for one highly expressed gene like GAPDH and a
 
 For example the script can show which isoform is more dominant and thus probably more functional in different tissues.
 
-I took as the example here the NFI group of transcription factors that consist of NFIA, NFIB, NFIC, NFIX genes.
+I took as an example here the NFI group of transcription factors that consist of NFIA, NFIB, NFIC, NFIX genes.
 
 To check the expression level in arteries I ran the script for 'Artery - Coronary' and 'Artery - Tibial' GTEX tissues and got the following output where NFIX is the most dominant form.
 
