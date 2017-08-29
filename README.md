@@ -23,7 +23,7 @@ To run the script
 <pre>
 wget 
 chmod 755 GTExExtractor.sh
-GTExExtractor.sh 'Artery - Coronary'
+./GTExExtractor.sh 'Artery - Coronary'
 </pre>
 
 Check the output pdf file:
