@@ -42,7 +42,7 @@ For example, if we run the script for one highly expressed gene like GAPDH and a
 
 For example the script can show which isoform is more dominant and thus probably more functional in different tissues.
 
-I took as the example here the NFI group of transcription factors that c2onsisnt of NFIA, NFIB, NFIC, NFIX genes.
+I took as the example here the NFI group of transcription factors that consist of NFIA, NFIB, NFIC, NFIX genes.
 
 To check the expression level in arteries I ran the script for 'Artery - Coronary' and 'Artery - Tibial' GTEX tissues and got the following output where NFIX is the most dominant form.
 
@@ -50,7 +50,7 @@ To check the expression level in arteries I ran the script for 'Artery - Coronar
 
 ![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.16.png)
 
-To check the output in a diferent tissue I ran the script for 'Skeletal Muscle' where NFIc is the most dominant form:
+To check the output in a diferent tissue I ran the script for 'Skeletal Muscle' where NFIC is the most dominant form:
 
 ![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.17.png)
 
