@@ -59,3 +59,7 @@ And in 'Breast - Mammary Tissue' the NFIB variant becomes expressed at higher le
 ![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.24.png)
 
 This example shows how to quickly check for the differences within the class of genes.
+
+Similarly, you can emphasize those cases where the gene in certain tissue(s) has a known function from the literature and also has higher expression, like in the case of TCF21 gene that is involved in various physiological and pathophysiological procceses in lung.
+
+![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.22.png)
