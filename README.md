@@ -50,6 +50,12 @@ To check the expression level in arteries I ran the script for 'Artery - Coronar
 
 ![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.16.png)
 
-To check the output in a diferent tissue I ran the script:
+To check the output in a diferent tissue I ran the script for 'Skeletal Muscle' where NFIc is the most dominant form:
 
-This example shows that NFIX variant is more dominant in coronary arteries while
+![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.17.png)
+
+And in 'Breast - Mummary Tissue' the NFIB variant becomes expressed at higher levels. 
+
+![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.21.png)
+
+This example shows how to quickly check for the differences within the class of genes.
