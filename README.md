@@ -28,7 +28,7 @@ GTExExtractor.sh 'Artery - Coronary'
 
 Check the output pdf file:
 
-![alt text](
+![alt text](https://github.com/milospjanic/GTExExtractor/blob/master/output_gtexex.21.png)
 
 If you have more genes in the input file the script will automatically widen the graph
 
