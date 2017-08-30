@@ -21,7 +21,7 @@ TCF12
 To run the script 
 
 <pre>
-wget 
+wget https://raw.githubusercontent.com/milospjanic/GTExExtractor/master/GTExExtractor.sh
 chmod 755 GTExExtractor.sh
 ./GTExExtractor.sh 'Artery - Coronary'
 </pre>
