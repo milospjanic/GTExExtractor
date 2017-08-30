@@ -54,7 +54,7 @@ cat GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct | head -n3 | tail -n1
 while
 IFS= read -r line
 do 
-grep -P "$line\t" GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct > $line.gene.rpkm.txt
+grep -P "\t$line\t" GTEx_Analysis_v6p_RNA-seq_RNA-SeQCv1.1.8_gene_rpkm.gct > $line.gene.rpkm.txt
 cat header $line.gene.rpkm.txt > $line.gene.rpkm.header.txt
 done < "$GENES"
 
